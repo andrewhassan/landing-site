@@ -55,7 +55,7 @@ app.use(function(err, req, res, next) {
     });
 });
 
-// Listen on 1337 cause I'm cool like that
-var server = app.listen(1337, function() {
+// Listen on 3000 cause I'm cool like that
+var server = app.listen(process.env.PORT || 3000, function() {
     console.log("Connection opened");
 });
