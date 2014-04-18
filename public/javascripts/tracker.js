@@ -16,9 +16,10 @@ Tracker.prototype.sendTrackingEvent = function (event) {
   _event.type = event.type || "unknown";
   _event.element = event.element || null;
   _event.scroll_position = event.scroll_position || null;
-  _event.timestamp = (new Date()).getTime() / 1000;
+  _event.timestamp = Math.round((new Date()).getTime() / 1000);
 
-  $.post({
+  $.ajax({
+    type: "POST",
     url: '/track',
     data: _event
   });
