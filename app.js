@@ -7,7 +7,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes');
-var users = require('./routes/user');
+var track = require('./routes/track');
 
 var app = express();
 
@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(app.router);
 
 app.get('/', routes.index);
-app.get('/users', users.list);
+app.post('/track', track.index);
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
@@ -55,5 +55,7 @@ app.use(function(err, req, res, next) {
     });
 });
 
-
-module.exports = app;
+// Listen on 1337 cause I'm cool like that
+var server = app.listen(1337, function() {
+    console.log("Connection opened");
+});
