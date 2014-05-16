@@ -22,8 +22,11 @@ body .header.collapsed {
   height: 60px;
 }
 
-body .header *, body .header {
-  transition-duration: 0.5s;
+body .header > .navigation > h1,
+body .header > .navigation > nav,
+body .header > .profile-picture,
+body .header {
+  transition-duration: 0.3s;
 }
 
 body .header > .navigation {
@@ -108,17 +111,7 @@ body .content {
   -webkit-animation-fill-mode: forwards;
 }
 
-.horizontal-line {/*
-  position: absolute;
-  height: 2px;
-  width: 0;
-  background-color: #3d93e3;
-  right: 100px;
-  top: 100px;
-  margin-bottom: 20px;
-  -webkit-animation: animate-side-line 3s;
-  animation: animate-side-line 3s;
-  -webkit-animation-fill-mode: forwards;*/
+.horizontal-line {
   width: 0;
   height: 1px;
   background-color: #3d93e3;
@@ -133,12 +126,12 @@ body .content {
 
 @-webkit-keyframes animate-side-line {
   from { height: 0; }
-  to { height: 1300px; }
+  to { height: 1330px; }
 }
 
 @keyframes animate-side-line {
   from { height: 0; }
-  to { height: 1300px; }
+  to { height: 1330px; }
 }
 
 /* SECTION CSS */
