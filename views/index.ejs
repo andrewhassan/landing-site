@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <script type='text/javascript' src='/javascripts/jquery.min.js'></script>
-    <script type='text/javascript' src='/javascripts/velocity.min.js'></script>
+    <script type='text/javascript' src='/javascripts/underscore.min.js'></script>
+    <script type='text/javascript' src='/javascripts/header_collapse.js'></script>
     <script>
     $(document).ready(function() {
       $(".horizontal-line").addClass("show");
@@ -19,7 +20,7 @@
       <div class="navigation">
         <h1>Andrew Hassan</h1>
         <nav>
-          <a href="#about" class="active">About</a>
+          <a href="#about" onclick="$('.header').toggleClass('collapsed')" class="active">About</a>
           <a href="#engineering">Engineering</a>
           <a href="#design">Design</a>
           <a href="#contact">Contact</a>
