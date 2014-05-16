@@ -15,12 +15,18 @@ $(document).ready(function () {
   }
 
   function setActiveNav() {
-    $sections.each(function(section) {
-      if ($(this).position().top <= current_scroll_position + 60) {
-        $("nav .active").removeClass("active");
-        $("nav a").eq(section).addClass("active");
-      }
-    });
+    if (current_scroll_position < collapse_scroll_position) {
+      $("nav .active").removeClass("active");
+      $("nav a").first().addClass("active");
+    }
+    else {
+      $sections.each(function(section) {
+        if ($(this).position().top <= current_scroll_position + 60) {
+          $("nav .active").removeClass("active");
+          $("nav a").eq(section).addClass("active");
+        }
+      });
+    }
   }
 
   // Throttle the call so that it can be called every 100 ms at max
