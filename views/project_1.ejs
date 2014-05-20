@@ -1,0 +1,32 @@
+<div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+  <h4 class="modal-title">Realtime Web Application</h4>
+</div>
+<div class="modal-body">
+  <p>BlueRover is a company that provides a machine-to-machine platform that transfers data from sensors (e.g. temperature, GPS) to BlueRover's servers over the internet.</p>
+  <p>The web application I build had to:</p>
+  <ul>
+    <li>Send data in realtime to clients as the BlueRover device reports it</li>
+    <li>Run "alert handler" background processes to monitor the status of the sensors</li>
+    <ul>
+      <li>These processes are used to monitor sensors based on client's conditions (e.g. temperature is above 4ºC for 2 hours)</li>
+      <li>They must be dynamically created/destroyed based on when they're needed or if client's change the config</li>
+      <li>They can perform actions and raise an alert when the certain events happen (e.g. send email when condition isn't met)</li>
+    </ul>
+    <li>Have a functional "dashboard" to visualize data</li>
+    <ul>
+      <li>The front-end design I ended up with decouples the data-type from the graphical visualizations (i.e. you can use the same visualization with different types of data such as temperature or speed)</li>
+    </ul>
+    <li>Look nice</li>
+    <ul>
+      <li>This application is one of the first of it's type in the food safety business and so it had to make a good impression</li>
+    </ul>
+  </ul>
+  <p>At the time, I was the sole engineer working on the project. As a result, I did all back-end, front-end, and graphic design for the project within a 4-month period.</p>
+  <p>The application was built using sails.js. Internally, the application uses a fan-out architecture to propagate sensor events through the system. When sensor data comes in, the data is parsed and saved, alert handlers are run, and the data is pushed to subscribed clients.</p>
+  <p>On the front-end side, there are different "widgets" that represent the various visualizations that a client may want (e.g. line graph). Each widget was originally supposed to have a WebSocket to the server so that it can listen for new events. However, in practice, this didn't work because there were too many connections being open at once and the server dropped most of them. To combat this, I developed a WebSocket multiplexer library which sits on top of socket.io. My library basically gives the widgets the illusion that they have their own sockets, but they are really sharing one and the data gets multiplexed.</p>
+  <p>Please contact me if you wish to learn more about this project (there's only so much I can fit in a modal dialog). Some aspects of this project are a lot deeper than they seem and I'd be more than happy to have a discussion about the project.</p>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>

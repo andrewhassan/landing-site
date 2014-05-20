@@ -10,6 +10,7 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script type='text/javascript' src='/javascripts/underscore.min.js'></script>
     <script type='text/javascript' src='/javascripts/scroll_events.js'></script>
+    <script type='text/javascript' src='/javascripts/project_modal.js'></script>
     <script type='text/javascript' src='/javascripts/main.js'></script>
     <!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>-->
   </head>
@@ -41,7 +42,14 @@
         <div id="engineering_horizontal_line" class="horizontal-line pull-right"></div>
         <p>Over the course of the co-op program, I've built my engineering skillset up and have worked on a bunch of cool projects over the years. Below is a gallery of a few of my past projects.</p>
         <div class="well">
-        test
+          <div id="project_1" class="project" data-toggle="modal" href="/projects/project_1" data-target="#project_modal">
+            <div class="project-image">
+              <img class="limit-width" src="/images/project_1.png" />
+            </div>
+            <div class="project-name b-20">
+              Realtime Web Application to Monitor and Analyze Remote Sensor Data
+            </div>
+          </div>
         </div>
       </section>
       <section id="design">
@@ -58,6 +66,12 @@
                         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
                                 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
       </section>
+    </div>
+    <div class="modal fade" id="project_modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+      </div>
     </div>
   </body>
 </html>

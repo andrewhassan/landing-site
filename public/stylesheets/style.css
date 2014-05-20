@@ -145,7 +145,7 @@ body .content {
   margin-right: 100px;
 }
 
-.content section > h1 {
+h1 {
   font-weight: 200;
 }
 
@@ -153,11 +153,52 @@ body .content {
   width: 98%;
 }
 
-.content section h2 {
+h2 {
   font-weight: 200;
   font-size: 18pt;
 }
 
 .content section .well {
   width: 98%;
+}
+
+/* PROJECT GALLERY */
+.project {
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: inset 0 0 1px 1px #ddd;
+  background-color: #f9f9f9;
+}
+
+.project:hover {
+  cursor: pointer;
+}
+
+.project img.limit-height {
+  height: 260px;
+}
+
+.project img.limit-width {
+  width: 260px;
+}
+
+.project-name {
+  height: 40px;
+  position: relative;
+}
+
+.b-20 {
+  bottom: 20px;
+}
+
+.project-image {
+  height: 260px;
+}
+
+/* MODAL STYLES */
+.modal-body h3 {
+  font-size: 14pt;
 }
