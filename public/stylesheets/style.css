@@ -99,15 +99,15 @@ body .content {
 
 /* LINE CSS */
 .side-line {
-  position: absolute;
+  position: fixed;
   width: 2px;
   height: 0;
   background-color: #3d93e3;
   right: 100px;
   top: 100px;
   margin-bottom: 20px;
-  -webkit-animation: animate-side-line 3s;
-  animation: animate-side-line 3s;
+  -webkit-animation: animate-side-line 1.5s;
+  animation: animate-side-line 1.5s;
   -webkit-animation-fill-mode: forwards;
 }
 
@@ -126,12 +126,12 @@ body .content {
 
 @-webkit-keyframes animate-side-line {
   from { height: 0; }
-  to { height: 1330px; }
+  to { height: 100%; }
 }
 
 @keyframes animate-side-line {
   from { height: 0; }
-  to { height: 1330px; }
+  to { height: 100%; }
 }
 
 /* SECTION CSS */
