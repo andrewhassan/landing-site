@@ -162,6 +162,10 @@ h2 {
   width: 98%;
 }
 
+.content section h4 {
+  font-weight: 200;
+}
+
 /* PROJECT GALLERY */
 .project {
   padding: 10px;
