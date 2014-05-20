@@ -1,21 +1,22 @@
 body {
   font: 14px "Open Sans", Helvetica, Arial, sans-serif;
   margin-top: 0;
+  background-color: #eee;
 }
 
 a {
-  color: #3d93e3;
+  color: #4DC951;
 }
 
 /* HEADER CSS */
 body .header {
-  background-color: #ffffff;
+  background-color: rgba(51,51,51,0.9);
   width: 100%;
   height: 100px;
   position: fixed;
   top: 0;
   z-index: 1000;
-  border-bottom: 1px solid #3d93e3;
+  border-bottom: 2px solid #4DC951;
 }
 
 body .header.collapsed {
@@ -35,12 +36,17 @@ body .header > .navigation {
   bottom: 5px;
 }
 
+body .header > .navigation a {
+  color: #cccccc;
+}
+
 body .header > .navigation > h1 {
   display: inline-block;
   font-size: 50px;
   font-weight: 200;
   margin: 0;
   padding: 0;
+  color: #ffffff;
 }
 
 body .header.collapsed > .navigation > h1 {
@@ -67,7 +73,7 @@ body .header > .navigation > nav > a:hover {
 }
 
 body .header > .navigation > nav > a.active {
-  background-color: #eeeeee;
+  background-color: #222222;
   border-radius: 3px;
 }
 
@@ -89,7 +95,7 @@ body .header > .profile-picture > img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 2px solid #3d93e3;
+  border: 3px solid #4DC951;
 }
 
 body .content {
@@ -102,7 +108,7 @@ body .content {
   position: fixed;
   width: 2px;
   height: 0;
-  background-color: #3d93e3;
+  background-color: #4DC951;
   right: 100px;
   top: 100px;
   margin-bottom: 20px;
@@ -114,7 +120,7 @@ body .content {
 .horizontal-line {
   width: 0;
   height: 1px;
-  background-color: #3d93e3;
+  background-color: #4DC951;
   transition-duration: 1s;
   margin-bottom: 10px;
   margin-left: 100%;
