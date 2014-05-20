@@ -16,7 +16,6 @@ body .header {
   position: fixed;
   top: 0;
   z-index: 1000;
-  border-bottom: 2px solid #4DC951;
 }
 
 body .header.collapsed {
@@ -33,7 +32,7 @@ body .header {
 body .header > .navigation {
   position: absolute;
   left: 15px;
-  bottom: 5px;
+  bottom: 15px;
 }
 
 body .header > .navigation a {
@@ -50,7 +49,7 @@ body .header > .navigation > h1 {
 }
 
 body .header.collapsed > .navigation > h1 {
-  font-size: 36px;
+  font-size: 30px;
 }
 
 body .header > .navigation > nav {
@@ -60,7 +59,7 @@ body .header > .navigation > nav {
 }
 
 body .header.collapsed > .navigation > nav {
-  bottom: 5px;
+  bottom: 3px;
 }
 
 body .header > .navigation > nav > a {
@@ -151,5 +150,14 @@ body .content {
 }
 
 .content section p {
-  width: 97%;
+  width: 98%;
+}
+
+.content section h2 {
+  font-weight: 200;
+  font-size: 18pt;
+}
+
+.content section .well {
+  width: 98%;
 }
