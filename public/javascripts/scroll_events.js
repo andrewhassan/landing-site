@@ -42,4 +42,12 @@ $(document).ready(function () {
   // Call these on page load
   throttled_setHeaderClass();
   throttled_setActiveNav();
+
+  $("nav a").on('click', function (e) {
+    e.preventDefault();
+    var scrollTo = $($(e.currentTarget).attr('href')).offset().top - 30;
+    $('html, body').animate({
+      scrollTop: scrollTo
+    }, 1000);
+  });
 });
