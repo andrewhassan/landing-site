@@ -26,7 +26,7 @@
   <p>The application was built using sails.js. Internally, the application uses a fan-out architecture to propagate sensor events through the system. When sensor data comes in, the data is parsed and saved, alert handlers are run, and the data is pushed to subscribed clients.</p>
   <p>On the front-end side, there are different "widgets" that represent the various visualizations that a client may want (e.g. line graph). Each widget was originally supposed to have a WebSocket to the server so that it can listen for new events. However, in practice, this didn't work because there were too many connections being open at once and the server dropped most of them. To combat this, I developed a WebSocket multiplexer library which sits on top of socket.io. My library basically gives the widgets the illusion that they have their own sockets, but they are really sharing one and the data gets multiplexed.</p>
   <p>Below is a screenshot of one particular configuration</p>
-  <img class="width_100" src="/images/project_1.png" />
+  <img class="width-100" src="/images/project_1.png" />
   <p>Please contact me if you wish to learn more about this project (there's only so much I can fit in a modal dialog). Some aspects of this project are a lot deeper than they seem and I'd be more than happy to have a discussion about the project.</p>
 </div>
 <div class="modal-footer">

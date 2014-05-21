@@ -223,7 +223,15 @@ h2 {
 }
 
 /* UTILITY CLASSES */
-.width_100 {
+.width-100 {
   width: 100%;
   height: auto;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
 }
