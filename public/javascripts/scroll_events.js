@@ -45,7 +45,8 @@ $(document).ready(function () {
 
   $("nav a").on('click', function (e) {
     e.preventDefault();
-    var scrollTo = $($(e.currentTarget).attr('href')).offset().top - 30;
+    var offset = $($(e.currentTarget).attr('href')).offset().top;
+    var scrollTo = offset > collapse_scroll_position ? offset - 40 : offset - 100;
     $('html, body').animate({
       scrollTop: scrollTo
     }, 1000);
