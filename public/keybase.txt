@@ -1,0 +1,66 @@
+==================================================================
+https://keybase.io/ahassan
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.andrewhassan.com
+  * I am ahassan (https://keybase.io/ahassan) on keybase.
+  * I have a public key with fingerprint 0FD8 1DD9 B248 F520 DAE5  8FD4 2148 C403 2847 8F8E
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "0fd81dd9b248f520dae58fd42148c40328478f8e",
+            "host": "keybase.io",
+            "key_id": "2148c40328478f8e",
+            "uid": "fc7c44dcd6f6ed51dd975991edcf6600",
+            "username": "ahassan"
+        },
+        "service": {
+            "hostname": "www.andrewhassan.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1400856577,
+    "expire_in": 157680000,
+    "prev": "1c97aab2e43761e414dccc701d69b042e43a567193999e0894dbbf4f685094aa",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.15
+Comment: https://keybase.io/crypto
+
+yMH0AnicbZF9SBRpHMd3V1NaKkLEPyKIBs0N9mRm9pm37UWh6+o61MVEkZZdZ+Z5
+xp3UmXVm3XXZNc97kyvOo39ODuvMP0LOShE9jMq3yMCTgxADs6NX5MqI4M7OiGx9
+ZrP/ev4Z5juf3+c7P55bWzNsTvtS8c5/xms6gvbZyTfNtuNttfYEIekwTngTRD1K
+PxRVq0NG2FC1COElSAXyFISCRANeYWgSiojhFQhoCvAyID00Dzhe4RHhJkK6aU1g
+jSSaqEjVcYZfgirE6Sf45vQHReZkAKAMWYVFkLG6OEYQKARlhWVJ0gJNZGhiI8K0
+GBJNU9SIVjeBw6gq4zCRbt4AYrFYkahBA8U+kEWy3ogVYUOP6LLegIlQJBL2WoJI
+PJyeQFJwwxWUVA3i9fFAFBmmqmuEl8KkHFEtOQVIkmdYhuPcBGoJqwYKqhbBcCxP
+4mPVoChWUrLAiaJEI+DhWAoBCu8nyxxJQVaQSGDlIsNylOARBAGRvACgJClAYXmG
+FIAo4n4TNWk64fXg3xTrsNJU6zQx0mwgovXmpD/TZnfasjY5rAu0OTdv/3it7GJ2
+6qsbWd0l9NXvRt8NtlTnLPr6CrsnhBdT9Um68uu8Z8OZl2HqqXtu4VquWTpU2Hm3
+6s/8ysqh1297RrLKpxdL/vc+ufL+s/gPL0eqCh16sPOn6Bekq2P//Vkz2+86e31u
+5vPzOYdq+ppSf3y5p7xh8FE+eSljelcZzTWuzScDRzK+GY2vtR+rKHv4Y+3euWLn
+YceB1lP8g5Xx1bbhwPJA+xY/WDGX29Hf1ed2QF8KXnAD7S/jN1Z9PvWvq3/s14nb
+YsMvp8eMgZ572xZOjITO1M/u/v2ivzfXXRHgHg/8PONaKujqSc7vW+363uHTvb2J
+g3n/nQwm7Udf+e4UxAL9pd+uA0PeFow=
+=kEC5
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ahassan
+
+==================================================================
+
